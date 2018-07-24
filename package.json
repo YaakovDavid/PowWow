@@ -1,0 +1,31 @@
+{
+  "name": "react-chat-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@pusher/chatkit": "^0.7.16",
+    "@pusher/chatkit-server": "^0.12.1",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "emoji-picker": "0.0.7",
+    "emoji-picker-react": "^2.0.4",
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-emoji-picker": "^1.0.13",
+    "react-scripts": "1.1.1",
+    "react-speech-recognition": "^1.0.6"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "dev": "concurrently --names \"React,Express\" --prefix-colors \"green,blue\" \"react-scripts start\" \"nodemon server.js\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
+  }
+}

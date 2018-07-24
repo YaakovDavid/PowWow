@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #FF9F1C;
+}
+
+/* a:hover{
+  color: #E71D36;
+} */
+
+li.room.active a {
+  color: #FDFFFC;
+}
+
+.text-page{
+  display: flex;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+  font-weight: 200;
+  color:#3e5869;
+}
+
+#root {
+  height: 100%;
+}
+
+.chat-screen {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px;
+  grid-template-areas:
+    "w m m m m m"
+    "r m m m m m"
+    "r m m m m m"
+    "r m m m m m"
+    "r v s s s s"
+    "n o o t t t";
+}
+
+.online{
+  grid-area: o;
+
+  color: #FF9F1C;
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+.new-room-form {
+  grid-area: n;
+
+  padding: 0 15px;
+  background-color: #011627;
+  border-top: 4px solid #FDFFFC;
+}
+
+.room-list {
+  grid-area: r;
+
+  background-color: #011627;
+  box-sizing: border-box;
+  padding: 10px;
+  overflow: scroll;
+  height: 100%;
+}
+
+.message-list {
+  grid-area: m;
+
+  padding-bottom: 20px;
+  border-bottom: 2px solid #3e5869;
+  margin: 0 20px;
+  overflow: scroll;
+}
+
+.voice{
+  grid-area: v;
+
+  height: 100px;
+  width: 100px;
+  padding-right: 15px;
+  margin-left: 40px;
+  margin-top: 10px;
+  flex-direction: row;
+  border-right: 2px solid #E71D36;
+}
+
+.send-message-form {
+  grid-area: s;
+
+  margin-left: 20px;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.whos-in-chat {
+  grid-area: w;
+
+  background-color: #011627;
+  color: #FDFFFC;
+  font-weight: 600;
+  border-bottom: 4px solid #FDFFFC;
+  overflow: scoll;
+  color: #FF9F1C;
+}
+
+.typing-indicator{
+  grid-area: t;
+
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.input-button{
+  flex-direction: row;
+  float: right;
+}
+
+.message{
+  background-color: #2EC4B6;
+  color: #FDFFFC;
+  padding: 5px 8px;
+  border-radius: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  max-width: 50%;
+  display: inline-block;
+}
+
+.sender{
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.room-list ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: scoll;
+}
+
+.room-list li {
+  margin: 10px 0;
+  color: #FF9F1C;
+}
+
+.room-list h3 {
+  margin: 5px 0;
+  color: #E71D36;
+}
+
+.whos-in-chat h3 {
+  margin: 5px 0;
+  padding: 5px 10px;
+  font-weight: 600;
+  color: #E71D36;
+  margin-bottom: 10px;
+}
+
+.whos-in-chat li{
+  padding: 5px 10px 5px 20px;
+}
+
+.room-list .room a {
+  font-weight: 600;
+  text-decoration: none;
+ }
+
+.new-room-form form {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-room-form input {
+  border-top: 4px solid #FDFFFC;
+  width: 135px;
+  background-color: #011627;
+}
+
+.new-room-form input::placeholder {
+  font-weight: 500;
+  color: #FDFFFC;
+}
+
+.new-room-form input:focus {
+  outline-width: 0;
+}
+
+.new-room-form input {
+  border: 0;
+  font-weight: 500;
+  font-size: 15px;
+  color: #FDFFFC;
+}
+
+.text-input{
+  border: 0;
+  width: 900px;
+  min-height: 200px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #2EC4B6;
+}
+
+/* .text-input input::placeholder{
+  color: #2EC4B6;
+} */
+
+.text-input:focus {
+  outline-width: 0;
+}
+
+@media (max-width: 1250px) {
+  .text-input {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .text-input {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .text-input {
+    width: 600px;
+  }
+}
+
+@media (max-width: 950px) {
+  .text-input {
+    width: 500px;
+  }
+}
+
+@media (max-width: 850px) {
+  .text-input {
+    width: 400px;
+  }
+}
+
+@media (max-width: 750px) {
+  .text-input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 650px) {
+  .text-input {
+    width: 200px;
+  }
+}
+
+button{
+  padding: 5px 8px;
+  border-radius: 8px;
+  background-color: #FDFFFC;
+  color: #E71D36;
+  margin: 5px 0;
+}
+
+.app{
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.app-input{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 160px;
+  height: 20px;
+  border-radius: 8px;
+  padding: 5px 8px;
+  border-color: lightseagreen;
+}
+
+input .submit-main-page{
+  height: 20px;
+  width: 30px;
+  padding: 5px 8px;
+  position: relative;
+  top: 50px;
+  color: lightseagreen;
+}
+
+/* .app-input input::placeholder{
+  color: green;
+} */
