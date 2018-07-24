@@ -20,7 +20,7 @@
 </p>
 
 <h1>Wireframes: </h1>
-<img src="https://s3.amazonaws.com/www.yaakovdavid.me/images/Screen+Shot+2018-07-16+at+5.01.18+PM.png" height="300" width="500">
+<img src="https://s3.amazonaws.com/yaakovdavid.me/images/Screen+Shot+2018-07-16+at+5.01.18+PM.png" height="300" width="500">
 
 <h1>Tech:</h1>
 <p>
@@ -41,8 +41,8 @@
 </P>
 
 <h1> Screen shots:</h1>
-<img src="https://s3.amazonaws.com/www.yaakovdavid.me/images/Screen+Shot+2018-07-16+at+5.05.22+PM.png" height="300" width="300">
-<img src="https://s3.amazonaws.com/www.yaakovdavid.me/images/Screen+Shot+2018-07-16+at+9.11.41+PM.png" height="300" width="300">
+<img src="https://s3.amazonaws.com/yaakovdavid.me/images/Screen+Shot+2018-07-16+at+5.05.22+PM.png" height="300" width="300">
+<img src="https://s3.amazonaws.com/yaakovdavid.me/images/Screen+Shot+2018-07-16+at+9.11.41+PM.png" height="300" width="300">
 
 
 
